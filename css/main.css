@@ -1,0 +1,485 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*
+============================
+
+Main Work
+
+============================
+*/
+
+
+body {
+    background-color: #f6f9fc;
+
+    background-color: #f6f9fc;
+    background: #a8ff78;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #78ffd6, #a8ff78);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #78ffd6, #a8ff78); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+/*
+===============================
+
+Header
+
+================================
+*/
+
+.head {
+    height: 100vh;
+    width: 100%;
+    margin-top: 0.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.head-1 {
+    height: 10%;
+    width: 100%;
+    background-color: #e2e5eb;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 1em;
+
+}
+.head-1 a {
+    text-decoration: none;
+    font-family: Aclonica;
+    font-size: 1.5em;
+    color:  #24b47e;
+    font-weight: 800;
+}
+.head-1 a:hover {
+    padding-bottom: 0.5em;
+    border-bottom: 4px solid #24b47e;
+}
+
+.head-1 a:nth-of-type(2) {
+    padding-right: 3em;
+    padding-left: 3em;
+}
+.head-1 a:nth-of-type(1) {
+    padding-right: 3em;
+    padding-left: 3em;
+}
+.head-1 a:nth-of-type(3) {
+    padding-left: 3em;
+    padding-right: 3em;
+}
+.head-2 {
+    margin-top: 3em;
+    margin-bottom: 1em;
+    width: 96%;
+    background-color: #e2e5eb;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 2em;
+    height: 80%;
+}
+.head-2 img {
+    border-radius: 50%;
+    width: 21rem;
+    height: 21rem;
+    border: 1px solid white;
+    align-self: center;
+    order: 1;
+}
+.head-2 div {
+    
+    align-self: center;
+    order: 2;
+}
+.head-2 h1 {
+    font-family: Aclonica;
+    font-weight: 700;
+    font-size: 4em;
+    margin-bottom: 0.5em;
+    color: #6772e5;
+}
+.head-2 h2{
+    font-family: Aclonica;
+    font-size: 3rem;
+    font-weight: 700;
+    margin-top: 0.5em;
+    color: #6772e5;
+}
+
+/*
+==============================
+
+Main Section
+
+==============================
+*/
+
+main {
+    width: 96%;
+    margin: auto;
+    display: flex;
+    margin-top: 2em;
+    margin-bottom: 1em;
+    border-radius: 2em;
+    background-color: #e2e5eb;
+}
+main section {
+    padding: 4em;
+}
+
+main #about{
+    flex-basis: 60%;
+    border-right: 2px solid #78ffd6 ;
+    flex-direction: column;
+    display: flex;
+
+}
+
+main #about img {
+    width: 66px;
+    order: 1;
+    padding-top: 0;
+}
+
+main #about h2 {
+    font-size: 1.5em;
+    font-family: Aclonica;
+    padding-top: 0.5em;
+    order: 2;
+    color: #24b47e;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+main #about p {
+    padding-top: 1em;
+    font-family: Roboto;
+    font-weight: 400;
+    padding-bottom: 0.8em;
+    line-height: 1.7em;
+    color: #525f7f;
+    font-size: 1em;
+    order: 3;
+}
+
+main #about a {
+    text-decoration: none;
+    font-size: 1.2em;
+    color:steelblue;
+    order: 4;
+}
+#about a:visited {
+    color: steelblue;
+}
+
+
+main .tech {
+    flex-basis: 40%;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    margin-bottom: 1em;
+}
+main .tech img {
+    width: 66px;
+    order: 1;
+    padding-top: 0;
+}
+
+main .tech h2 {
+    font-size: 1.5em;
+    font-family: Aclonica;
+    padding-top: 0.5em;
+    order: 2;
+    color: #24b47e;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+main .tech div{
+    order: 3;
+    font-size: 1.2em;
+    font-family: Roboto;
+    font-weight: 700;
+    padding-top: 0.8em;
+}
+main .tech div img {
+    width: 25px;
+    padding-right: 1em;
+}
+.python{
+    color: #326b9b;
+}
+.psql {
+    color: #32658f;
+}
+.htm {
+    color: #ea3e00;
+}
+.cs {
+    color: #264de4;
+}
+.js {
+    color: #8208A1;
+}
+
+/*
+===========================
+
+Footer
+
+===========================
+*/
+
+.foot {
+    width: 100%;
+    height: 18%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 0.5em;
+    margin-top: 2em;
+    border-radius: 1em;
+    background-color: #e2e5eb;
+}
+
+.foot img {
+    width: 25px;
+}
+.social {
+    display: flex;
+    align-items: center;
+}
+.foot h2 {
+    font-size: 1.5em;
+    font-family: Aclonica;
+    color:  #24b47e;
+    font-weight: 800;
+    padding-top: 0.2em;
+    padding-bottom: 1em;
+}
+#github{
+    padding-right: 10em;
+    padding-left: 10em;
+    order:2
+}
+#mail a{
+    color: #EA4335;
+    order: 1;
+}
+
+#linkedin {
+    color: #0e76a8;
+    order: 3;
+}
+.social a{
+    font-family: Roboto;
+    font-weight: 700;
+    text-decoration: none;
+    padding-bottom: 0.5em;
+    padding-left: 0.2em;
+    font-size: 1.2em;
+    font-weight: 600;
+
+}
+.social a:visited {
+    color: inherit;
+}
+
+/*
+================================
+
+Media Queries
+
+================================
+*/
+@media screen and (max-width:1200px){
+    .head-2 {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .head-2 h2{
+        margin-top: 0.5em;
+        padding-left: 2.5em;
+    }
+}
+
+@media screen and (max-width:900px){
+    .head-2 {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .head-2 img {
+        margin: 0;
+    }
+    .head-2 h1 {
+        font-size: 3.5em;
+        margin-bottom: 0.5em;
+    }
+    .head-2 h2{
+        font-size: 2.5rem;
+        margin-top: 0.5em;
+        padding-left: 2.5em;
+    }
+  
+}
+@media screen and (max-width:768px){
+    .head{
+        height: 70vh;
+    }
+    .head-1 a{
+        font-size: 1.1em;
+    }
+    .head-1 a:hover {
+        padding-bottom: 0.2em;
+        border-bottom: 2px solid #24b47e;
+    }
+    .head-2 img {
+        width: 18rem;
+        height: 18rem;
+    }
+    main {
+        flex-direction: column;
+    }
+    main #about {
+        border-bottom: 2px solid #78ffd6;
+        align-items: center;
+    }
+    main section {
+        padding: 2.2em;
+    }
+    main #about h2 {
+        font-size: 1.1em;
+        padding-top: 0.2em;
+    }
+    main #about p {
+        font-size: 0.9em;
+    }
+    main .tech h2 {
+        font-size:  1.1em;
+    }
+    main .tech div{
+        font-size: 1em ;
+        padding-top: 0.8em;
+        font-weight: 800;
+    }
+    .foot h2 {
+        font-size: 1.1em;
+    }
+    .social a {
+        font-size: 1em;
+    }
+    #github{
+        padding-right: 5em;
+        padding-left: 5em;
+        order:2
+    }
+}
+@media screen and (max-width: 582px){
+    .head-1 a:nth-of-type(2) {
+        padding-right: 0.2em;
+        padding-left: 0.2em;
+    }
+    .head-1 a {
+        font-size: 0.84em;
+    }
+    .head-2 img {
+        width: 12rem;
+        height: 12rem;
+        margin-top: 1.5em;
+    }
+    .head-2 h1 {
+        font-size: 2em;
+        margin-bottom: 0.5em;
+    }
+    .head-2 h2{
+        font-size: 1.5rem;
+        margin-top: 0.5em;
+        padding-left: 2.5em;
+    }
+    main section {
+        padding: 1.5em;
+    }
+    main #about h2 {
+        font-size: 0.9em;
+        padding-top: 0.2em;
+    }
+    main #about p {
+        font-size: 0.7em;
+    }
+    main #about a {
+        text-decoration: none;
+        font-size: 0.9em;
+    }
+    main .tech h2 {
+        font-size:  0.9em;
+    }
+    main .tech div img {
+        width: 20px;
+    }
+    main .tech div{
+        font-size: 0.9em ;
+        padding-top: 0.8em;
+        font-weight: 800;
+    }
+    .foot img {
+        width: 17px;
+    }
+    .foot h2 {
+        font-size: 0.9em;
+    }
+    .social a {
+        font-size: 0.78em;
+    }
+    #github{
+        padding-right: 3em;
+        padding-left: 3em;
+    }
+}
+
