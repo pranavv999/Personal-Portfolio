@@ -72,7 +72,6 @@ Header
 .head {
     height: 100vh;
     width: 100%;
-    margin-top: 0.5em;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -86,7 +85,7 @@ Header
     display: flex;
     align-items: center;
     justify-content: space-around;
-    border-radius: 1em;
+    margin-bottom: 2.25em;
 
 }
 .head-1 a {
@@ -114,8 +113,7 @@ Header
     padding-right: 3em;
 }
 .head-2 {
-    margin-top: 3em;
-    margin-bottom: 1em;
+    margin-bottom: 2em;
     width: 96%;
     background-color: #e2e5eb;
     display: flex;
@@ -163,13 +161,12 @@ main {
     width: 96%;
     margin: auto;
     display: flex;
-    margin-top: 2em;
-    margin-bottom: 1em;
+    margin-bottom: 2.3em;
     border-radius: 2em;
     background-color: #e2e5eb;
 }
 main section {
-    padding: 4em;
+    padding: 3em;
 }
 
 main #about{
@@ -267,6 +264,56 @@ main .tech div img {
     color: #8208A1;
 }
 
+
+.edu-main {
+    width: 80%;
+    margin: auto;
+}
+.education {
+    display: flex;
+    border-radius: 2em;
+    background-color: #e2e5eb;
+    justify-content: space-around;
+    margin-bottom: 2.25em;
+    padding: 3em;
+    flex-wrap: wrap;
+}
+
+.education h2 {
+    font-size: 1.5em;
+    font-family: Aclonica;
+    padding-top: 0.5em;
+    padding-bottom: 0.7em;
+    order: 2;
+    color: #24b47e;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.primary {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.higher {
+    display: flex;
+    flex-direction: column;
+}
+
+.diploma, .degree {
+    margin-top: 0.6em;
+}
+
+.education p {
+    font-family: Roboto;
+    font-weight: 400;
+    padding-bottom: 0.8em;
+    line-height: 1em;
+    color: #525f7f;
+    font-size: 1em;
+}
+
 /*
 ===========================
 
@@ -277,13 +324,9 @@ Footer
 
 .foot {
     width: 100%;
-    height: 18%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 0.5em;
-    margin-top: 2em;
-    border-radius: 1em;
     background-color: #e2e5eb;
 }
 
@@ -320,7 +363,6 @@ Footer
     font-family: Roboto;
     font-weight: 700;
     text-decoration: none;
-    padding-bottom: 0.5em;
     padding-left: 0.2em;
     font-size: 1.2em;
     font-weight: 600;
@@ -328,6 +370,15 @@ Footer
 }
 .social a:visited {
     color: inherit;
+}
+
+.social div {
+    padding: 1em;
+    padding-top: 0;
+}
+
+.foot h2 {
+    padding: 1em;
 }
 
 /*
@@ -408,6 +459,17 @@ Media Queries
         font-size: 1em ;
         padding-top: 0.8em;
         font-weight: 800;
+    }
+
+    .education{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .education h2 {
+        font-size:  1.1em
+    }
+    .education p {
+        font-size: 0.9em;
     }
     .foot h2 {
         font-size: 1.1em;
