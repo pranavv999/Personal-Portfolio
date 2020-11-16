@@ -266,28 +266,32 @@ main .tech div img {
 
 
 .edu-main {
-    width: 80%;
+    width: 96%;
     margin: auto;
+    border-radius: 2em;
+    background-color: #e2e5eb;
+    padding-top: 0.7em;
 }
 .education {
     display: flex;
-    border-radius: 2em;
-    background-color: #e2e5eb;
     justify-content: space-around;
     margin-bottom: 2.25em;
     padding: 3em;
     flex-wrap: wrap;
 }
 
-.education h2 {
+.edu-main h2 {
     font-size: 1.5em;
     font-family: Aclonica;
     padding-top: 0.5em;
     padding-bottom: 0.7em;
-    order: 2;
     color: #24b47e;
     text-transform: uppercase;
     font-weight: 600;
+}
+
+.title {
+    text-align: center;
 }
 
 .primary {
@@ -465,7 +469,7 @@ Media Queries
         flex-direction: column;
         justify-content: center;
     }
-    .education h2 {
+    .edu-main h2 {
         font-size:  1.1em
     }
     .education p {
